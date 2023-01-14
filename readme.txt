@@ -29,5 +29,17 @@ and the latter is used as a delimiter in messages that sent in client-to-server 
 # STAT messages should be sent in the following format: STAT user1|user2|...userN|. a pipe ('|') should be in the end of each username.
 
 
+### POSSIBLE COMMANDS AND THIER FORMATS:
+# REGISTER: register <username> <password> <birthday in DD-MM-YYYY formant>
+# LOGIN: login <username> <password> <captcha charchter 0/1> (captcha charcter shuold be 1)
+# LOGOUT: logout
+# FOLLOW/UNFOLLOW: follow <0 to follow/1 to unfollow> <username>
+# POST: post <content>
+# PERSONAL MESSAGE: pm <username> <content>
+# LOGSTAT: logstat
+# STAT: stat <username1>|<username2>|...<usernamen>|
+# BLOCK: block <username>
+
+
 ### FILTERED WORDS:
 Filtered words are stored as a field in the DataBase Class. (bgu.spl.net.srv.DataBase, field name is "filterdWords")
