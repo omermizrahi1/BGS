@@ -6,14 +6,20 @@ mvn compile
 in order to compile and build the project files.
 
 # THREAD PER CLIENT SERVER:
+* run the bash script: tcp_server.sh
+or
 use this command:
 mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args="<port>"
 
 # REACTOR SERVER:
+* run the bash script: reactor_server.sh
+or
 use this command:
 mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.ReactorMain" -Dexec.args="<port> <Num of threads>"
 
 ## CLIENT:
+* run the bash script: client.sh
+or
 open the client folder with terminal. type "make" to compile the code, and then use the command "./bin/BGSClient <ip address> <port>"
 after that the client application should be running and connect to the server.
 
