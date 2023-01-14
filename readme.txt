@@ -31,7 +31,7 @@ and the latter is used as a delimiter in messages that sent in client-to-server 
 
 ### POSSIBLE COMMANDS AND THIER FORMATS:
 # REGISTER: register <username> <password> <birthday in DD-MM-YYYY formant>
-# LOGIN: login <username> <password> <captcha charchter 0/1> (captcha charcter shuold be 1)
+# LOGIN: login <username> <password> <captcha charchter 0/1> (captcha character shuold be 1)
 # LOGOUT: logout
 # FOLLOW/UNFOLLOW: follow <0 to follow/1 to unfollow> <username>
 # POST: post <content>
